@@ -8,18 +8,18 @@ I worked on this project to understand how machine learning models perform when 
 
 The analysis compares multiple models and resampling techniques to understand which approach provides the most useful balance between precision and recall.
 
-Dataset
+#### Dataset
 
 The project uses the European credit card transactions dataset covering two days in September 2013.
 
-The dataset contains:
+##### The dataset contains:
 
 * Total transactions: 284,807
 * Fraudulent transactions: 492
 * Legitimate transactions: 284,315
 * Fraudulent transactions: Approximately 0.172% of the dataset
 
-The target variable is Class:
+##### The target variable is Class:
 
 * 0 — Legitimate transaction
 * 1 — Fraudulent transaction
@@ -30,7 +30,7 @@ The dataset is highly imbalanced, which makes accuracy alone an unreliable measu
 
 Dataset availability: The transaction CSV is not included in this repository. Obtain the dataset from its original public source and place creditcard.csv in the project directory before running the notebook.
 
-What I Explored
+##### What I Explored
 
 1. Exploratory Data Analysis
 
@@ -62,7 +62,7 @@ The experiments use a fixed random state of 42 to make the split reproducible.
 
 For model selection, I used five-fold StratifiedKFold cross-validation and GridSearchCV to evaluate parameter combinations.
 
-The models were compared using:
+#### The models were compared using:
 
 * Accuracy
 * Precision
@@ -115,7 +115,7 @@ XGBoost achieved the highest cross-validated F1-score among these six models. KN
 
 The high accuracy scores should be interpreted carefully. Because legitimate transactions dominate the dataset, a model can achieve very high accuracy while still missing a meaningful proportion of fraudulent transactions.
 
-Test-Set Evaluation
+#### Test-Set Evaluation
 
 The notebook reports a test-set F1-score of 0.8520 for the tuned XGBoost model.
 
