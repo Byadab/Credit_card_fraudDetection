@@ -1,6 +1,6 @@
-Credit Card Fraud Detection
+# Credit Card Fraud Detection
 
-Project Overview
+####Project Overview
 
 Credit card fraud detection is a classification problem where the challenge is not simply to identify fraudulent transactions, but to identify them without incorrectly flagging too many legitimate transactions.
 
