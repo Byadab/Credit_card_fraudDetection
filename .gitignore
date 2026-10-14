@@ -1,0 +1,60 @@
+Python cache files
+
+pycache/
+*.py[cod]
+*$py.class
+
+Virtual environments
+
+.venv/
+venv/
+env/
+
+Jupyter Notebook temporary files
+
+.ipynb_checkpoints/
+
+Local datasets
+
+creditcard.csv
+data/
+datasets/
+
+Model artifacts
+
+*.pkl
+*.joblib
+*.h5
+*.keras
+
+Logs and temporary files
+
+*.log
+*.tmp
+
+macOS system files
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+Editor settings
+
+.vscode/
+.idea/
+
+Environment variables and credentials
+
+.env
+.env.*
+!.env.example
+
+Python packaging
+
+build/
+dist/
+*.egg-info/
+.coverage
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
